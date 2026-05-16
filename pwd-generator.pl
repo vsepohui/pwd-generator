@@ -13,4 +13,4 @@ $old .= time();
 
 srand crc32($old);
 
-say map { ('a'..'z', 'A'..'Z', 0..9)[rand 62] } 1..12;
+say "New password:" . map { ('a'..'z', 'A'..'Z', 0..9)[rand 62] } 1..12;
